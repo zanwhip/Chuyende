@@ -175,6 +175,10 @@ strong {
   padding-bottom: 100px;
 }
 
+.section-padding1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .section-bg {
   background-color: var(--section-bg-color);
 }
@@ -202,6 +206,7 @@ strong {
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .custom-block-wrap:hover {
@@ -209,7 +214,7 @@ strong {
 }
 
 .custom-block-body {
-  padding: 30px;
+  padding: 20px;
 }
 
 .custom-block-image {
@@ -241,6 +246,7 @@ strong {
 -----------------------------------------*/
 .custom-icon {
   color: var(--secondary-color);
+  margin-left: 2rem;
 }
 
 /*---------------------------------------
@@ -813,6 +819,9 @@ strong {
   display: block;
   border-radius: var(--border-radius-medium);
 }
+p {
+  text-align: justify;
+}
 
 blockquote {
   background: var(--section-bg-color);
@@ -833,7 +842,12 @@ blockquote::before {
   line-height: 1rem;
   display: block;
 }
-
+.containerFund {
+  display: flex;
+}
+.item {
+  width: 100%;
+}
 .author-comment-link {
   font-size: var(--copyright-font-size);
   font-weight: var(--font-weight-semibold);
