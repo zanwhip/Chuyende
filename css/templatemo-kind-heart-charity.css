@@ -248,6 +248,8 @@ strong {
 -----------------------------------------*/
 .custom-icon {
   color: var(--secondary-color);
+  margin-left:2rem ;
+  
 }
 
 
@@ -823,6 +825,7 @@ strong {
 .news-block-info {
   padding-top: 10px;
   padding-bottom: 10px;
+  
 }
 
 .news-block-title-link {
@@ -832,6 +835,10 @@ strong {
 .news-detail-image {
   display: block;
   border-radius: var(--border-radius-medium);
+}
+p 
+{
+  text-align: justify;
 }
 
 blockquote {
@@ -853,7 +860,14 @@ blockquote::before {
   line-height: 1rem;
   display: block;
 }
-
+.containerFund
+{
+  display: flex;
+}
+.item 
+{
+  width: 100%;
+}
 .author-comment-link {
   font-size: var(--copyright-font-size);
   font-weight: var(--font-weight-semibold);
