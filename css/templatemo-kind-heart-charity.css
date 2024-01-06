@@ -6,86 +6,83 @@ https://templatemo.com/tm-581-kind-heart-charity
 
 */
 
-
-
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis/Metropolis-Regular.woff2") format("woff2"),
+    url("../fonts/Metropolis/Metropolis-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis/Metropolis-Light.woff2") format("woff2"),
+    url("../fonts/Metropolis/Metropolis-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis/Metropolis-SemiBold.woff2") format("woff2"),
+    url("../fonts/Metropolis/Metropolis-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis/Metropolis-Bold.woff2") format("woff2"),
+    url("../fonts/Metropolis/Metropolis-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #5bc1ac;
-  --secondary-color:              #5a6f80;
-  --section-bg-color:             #f0f8ff;
-  --site-footer-bg-color:         #44525d;
-  --custom-btn-bg-color:          #597081;
-  --custom-btn-bg-hover-color:    #5bc1ac;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #e9eaeb;
+  --white-color: #ffffff;
+  --primary-color: #5bc1ac;
+  --secondary-color: #5a6f80;
+  --section-bg-color: #f0f8ff;
+  --site-footer-bg-color: #44525d;
+  --custom-btn-bg-color: #597081;
+  --custom-btn-bg-hover-color: #5bc1ac;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb;
 
-  --body-font-family:             'Metropolis', sans-serif;
+  --body-font-family: "Metropolis", sans-serif;
 
-  --h1-font-size:                 52px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  16px;
-  --btn-font-size:                18px;
-  --copyright-font-size:          14px;
+  --h1-font-size: 52px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 16px;
+  --btn-font-size: 18px;
+  --copyright-font-size: 14px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-semibold:         600;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -150,7 +147,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -170,7 +167,6 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
@@ -181,7 +177,7 @@ strong {
 
 .section-padding1 {
   padding-top: 50px;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 }
 .section-bg {
   background-color: var(--section-bg-color);
@@ -201,7 +197,6 @@ strong {
   position: relative;
 }
 
-
 /*---------------------------------------
   CUSTOM BLOCK               
 -----------------------------------------*/
@@ -211,12 +206,11 @@ strong {
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .custom-block-wrap:hover {
-  box-shadow: 0 1rem 3rem rgba(2, 137, 132, 0.175);
-
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .custom-block-body {
@@ -235,7 +229,6 @@ strong {
   display: block;
 }
 
-
 /*---------------------------------------
   PROGRESS BAR               
 -----------------------------------------*/
@@ -248,16 +241,13 @@ strong {
   background: var(--secondary-color);
 }
 
-
 /*---------------------------------------
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .custom-icon {
   color: var(--secondary-color);
-  margin-left:2rem ;
-  
+  margin-left: 2rem;
 }
-
 
 /*---------------------------------------
   CUSTOM LIST               
@@ -272,7 +262,6 @@ strong {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 
 /*---------------------------------------
   CUSTOM TEXT BOX               
@@ -304,7 +293,6 @@ strong {
   line-height: 30px;
 }
 
-
 /*---------------------------------------
   AVATAR IMAGE - TESTIMONIAL, AUTHOR               
 -----------------------------------------*/
@@ -314,7 +302,6 @@ strong {
   height: 65px;
   object-fit: cover;
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -353,7 +340,6 @@ strong {
   border-color: transparent;
   color: var(--white-color);
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -405,7 +391,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   background: transparent;
   color: var(--primary-color);
@@ -413,7 +399,7 @@ strong {
 
 .dropdown-menu {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   border: 0;
   max-width: 50px;
   padding: 0;
@@ -434,9 +420,9 @@ strong {
   padding-top: 0;
 }
 
-.dropdown-item.active, 
+.dropdown-item.active,
 .dropdown-item:active,
-.dropdown-item:focus, 
+.dropdown-item:focus,
 .dropdown-item:hover {
   background: transparent;
   color: var(--primary-color);
@@ -452,7 +438,7 @@ strong {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -490,7 +476,8 @@ strong {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -515,14 +502,15 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: var(--dark-color);
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon::before {
@@ -533,14 +521,12 @@ strong {
   top: 8px;
 }
 
-
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
   background: var(--primary-color);
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding: 8px 0;
 }
 
 .site-header p,
@@ -559,9 +545,7 @@ strong {
   width: inherit;
   height: inherit;
   line-height: inherit;
-  margin-right: 15px;
 }
-
 
 /*---------------------------------------
   HERO & HERO SLIDE         
@@ -572,7 +556,7 @@ strong {
   position: relative;
 }
 
-.carousel:hover .carousel-control-next-icon, 
+.carousel:hover .carousel-control-next-icon,
 .carousel:hover .carousel-control-prev-icon {
   opacity: 1;
 }
@@ -615,12 +599,12 @@ strong {
   justify-content: inherit;
 }
 
-.carousel-control-next, 
+.carousel-control-next,
 .carousel-control-prev {
   opacity: 1;
 }
 
-.carousel-control-next-icon, 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: var(--secondary-color);
   border-radius: var(--border-radius-large);
@@ -631,11 +615,10 @@ strong {
   transition: all 0.5s;
 }
 
-.carousel-control-next-icon:hover, 
+.carousel-control-next-icon:hover,
 .carousel-control-prev-icon:hover {
   background-color: var(--primary-color);
 }
-
 
 /*---------------------------------------
   FEATURE BLOCK              
@@ -650,7 +633,7 @@ strong {
 .featured-block:hover {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .featured-block:hover .featured-block-image {
@@ -674,7 +657,6 @@ strong {
   transition: all 0.5s;
 }
 
-
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
@@ -695,7 +677,6 @@ strong {
 .custom-text-block {
   padding: 60px 40px;
 }
-
 
 /*---------------------------------------
   COUNTER NUMBERS              
@@ -718,7 +699,6 @@ strong {
   font-weight: var(--font-weight-bold);
   line-height: normal;
 }
-
 
 /*---------------------------------------
   VOLUNTEER              
@@ -764,12 +744,11 @@ strong {
   line-height: 1.7;
 }
 
-
 /*---------------------------------------
   DONATE              
 -----------------------------------------*/
 .donate-section {
-  background-image: url('../images/different-people-doing-volunteer-work.jpg');
+  background-image: url("../images/different-people-doing-volunteer-work.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -786,12 +765,11 @@ strong {
   padding: 50px;
 }
 
-
 /*---------------------------------------
   NEWS         
 -----------------------------------------*/
 .news-detail-header-section {
-  background-image: url('../images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
+  background-image: url("../images/news/close-up-volunteer-oganizing-stuff-donation.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -831,7 +809,6 @@ strong {
 .news-block-info {
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
 .news-block-title-link {
@@ -842,8 +819,7 @@ strong {
   display: block;
   border-radius: var(--border-radius-medium);
 }
-p 
-{
+p {
   text-align: justify;
 }
 
@@ -866,12 +842,10 @@ blockquote::before {
   line-height: 1rem;
   display: block;
 }
-.containerFund
-{
+.containerFund {
   display: flex;
 }
-.item 
-{
+.item {
   width: 100%;
 }
 .author-comment-link {
@@ -953,7 +927,6 @@ blockquote::before {
   width: 150px;
   height: 150px;
 }
-
 
 /*---------------------------------------
   TESTIMONIAL CAROUSEL              
@@ -1059,27 +1032,26 @@ blockquote::before {
 #testimonial-carousel .carousel-indicators li {
   text-indent: inherit;
   background: transparent;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 #testimonial-carousel .carousel-indicators li,
 #testimonial-carousel .carousel-indicators li::before {
   width: 45px;
-  height: 45px; 
+  height: 45px;
 }
 
 #testimonial-carousel .carousel-indicators .avatar-image {
   width: 45px;
-  height: 45px; 
+  height: 45px;
 }
 
 #testimonial-carousel .carousel-indicators .active,
 #testimonial-carousel .carousel-indicators .active .avatar-image {
   background: transparent;
-  width: 50px; 
+  width: 50px;
   height: 50px;
 }
-
 
 /*---------------------------------------
   CONTACT               
@@ -1105,7 +1077,6 @@ blockquote::before {
   padding-bottom: 30px;
   width: 100%;
 }
-
 
 /*---------------------------------------
   CUSTOM FORM               
@@ -1178,9 +1149,9 @@ blockquote::before {
   text-align: center;
 }
 
-.form-check-radio .form-check-input[type=radio] {
+.form-check-radio .form-check-input[type="radio"] {
   background-color: var(--section-bg-color);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border: 0;
   box-shadow: none;
   outline: none;
@@ -1191,11 +1162,11 @@ blockquote::before {
   transition: all 0.5s;
 }
 
-.form-check-radio .form-check-input:checked[type=radio] {
+.form-check-radio .form-check-input:checked[type="radio"] {
   background-image: none;
 }
 
-.form-check-radio .form-check-input:checked[type=radio] + .form-check-label,
+.form-check-radio .form-check-input:checked[type="radio"] + .form-check-label,
 .form-check-radio .form-check-input:hover + .form-check-label,
 .form-check-radio .form-check-input:checked + .form-check-label {
   color: var(--white-color);
@@ -1208,11 +1179,11 @@ blockquote::before {
 }
 
 .input-group-file {
-  border-radius: .25rem;
-  padding: 13px .75rem;
+  border-radius: 0.25rem;
+  padding: 13px 0.75rem;
 }
 
-.input-group-file input[type=file] {
+.input-group-file input[type="file"] {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -1245,7 +1216,6 @@ blockquote::before {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
 }
-
 
 /*---------------------------------------
   CONTACT SEARCH & DONATE & SUBCRIBE FORM              
@@ -1291,7 +1261,6 @@ blockquote::before {
   margin-bottom: 0;
 }
 
-
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
@@ -1310,11 +1279,11 @@ blockquote::before {
 }
 
 .site-footer-bottom a {
-	color: var(--white-color);
+  color: var(--white-color);
 }
 
 .site-footer-bottom a:hover {
-	color: #FF6;
+  color: #ff6;
 }
 
 .site-footer-link {
@@ -1334,7 +1303,6 @@ blockquote::before {
 .site-footer .custom-btn:hover {
   background: var(--primary-color);
 }
-
 
 /*---------------------------------------
   FOOTER MENU               
@@ -1359,7 +1327,6 @@ blockquote::before {
   margin-bottom: 5px;
 }
 
-
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
@@ -1371,7 +1338,45 @@ blockquote::before {
 .social-icon-item {
   list-style: none;
   display: inline-block;
-  vertical-align: top;
+  margin-right: 8px;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide default select arrow */
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 150px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style the dropdown arrow */
+.custom-select::after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+/* Style the selected option */
+.custom-select select:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
 }
 
 .social-icon-link {
@@ -1392,7 +1397,6 @@ blockquote::before {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
@@ -1405,7 +1409,7 @@ blockquote::before {
     width: 450px;
     height: 450px;
   }
-  
+
   .volunteer-image {
     width: 350px;
     height: 350px;
@@ -1469,7 +1473,7 @@ blockquote::before {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 8px 20px;
   }
-  
+
   .dropdown:hover .dropdown-menu {
     display: block;
     position: relative;
@@ -1487,7 +1491,7 @@ blockquote::before {
     height: inherit;
   }
 
-  .carousel:hover .carousel-control-next-icon, 
+  .carousel:hover .carousel-control-next-icon,
   .carousel:hover .carousel-control-prev-icon {
     opacity: 1;
   }
@@ -1504,7 +1508,7 @@ blockquote::before {
     right: 12px;
   }
 
-  .carousel-control-next-icon, 
+  .carousel-control-next-icon,
   .carousel-control-prev-icon {
     opacity: 1;
     width: 60px;
@@ -1575,7 +1579,7 @@ blockquote::before {
     padding: 30px;
   }
 
-  .counter-number, 
+  .counter-number,
   .counter-number-text {
     font-size: var(--h2-font-size);
   }
@@ -1644,7 +1648,7 @@ blockquote::before {
     padding-bottom: 30px;
   }
 
-  .carousel-control-next-icon, 
+  .carousel-control-next-icon,
   .carousel-control-prev-icon {
     width: 45px;
     height: 45px;
@@ -1680,4 +1684,3 @@ blockquote::before {
     padding: 25px;
   }
 }
-
