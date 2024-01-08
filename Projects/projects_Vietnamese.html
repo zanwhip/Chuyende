@@ -14,6 +14,7 @@
         <link href="../css//bootstrap.min.css" rel="stylesheet">
 
         <link href="../css//templatemo-kind-heart-charity.css" rel="stylesheet">
+        <link href="../css/styles.css" rel="stylesheet">
 
 
     </head>
@@ -227,8 +228,18 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; align-items: center; ">
                                             <h5 class="mb-1">HỖ TRỢ THỰC PHẨM VÀ QUẦN ÁO TRƯỚC MÙA MƯA -2023</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png" style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
+                                        <!-- Modal -->
+                                        <div id="imageModal" class="modal">
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <span class="close" onclick="closeImageModal()">&times;</span>
+                                              <p>Chia sẻ đường link của trang web này <br> để mời gọi thêm nhiều người cùng tham gia:</p>
+                                                <input type="text" value="http://127.0.0.1:5501/project-detail-comlete.html" id="shareLinkInput" readonly>
+                                                <button onclick="copyToClipboard()">Sao chép link</button>
+                                            </div>
+                                          </div>
                                         <p>Thời gian: tháng 7 năm 2023</p>
                                          <p>Địa điểm : Thôn Pà-căng, xã Cà-dy, huyện Nam Giang, tỉnh Quảng Nam</p>
                                          <p> 30 gia đình bản Pà-căng</p>
@@ -244,6 +255,7 @@
 
                                         
                                     </div>
+                                    
                                     <div style="display: flex; align-items: center; margin-left : 30px;" >
                                         <a href="donate.html" class="custom-btn btn" style="flex: 50%; border-Radius : 20px; ">Quyên góp</a>
                                         <div>
@@ -255,17 +267,33 @@
                                             <img src="../images//icons/detail.png" style="width: 40px; height: 5    0px; margin: 5px; flex: 15%;" alt="Detail icon"/>
                                         </div>
                                         
-                                    </div>
-                                    
+                                    </div>                                
                                     
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </section>
+                <script>
+                    function openImageModal() {
+                        document.getElementById('imageModal').style.display = 'block';
+                    }
 
+                    function closeImageModal() {
+                        document.getElementById('imageModal').style.display = 'none';
+                    }
+  
+                    function copyToClipboard() {
+                        const copyText = document.getElementById('shareLinkInput');
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+                        document.execCommand('copy');
+                        alert('Link copied to clipboard!');
+                    }
+  
+                </script>
+            </section>
+            
 
 
 <!-- Processing Projects             -->
@@ -285,7 +313,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">DỰ ÁN GIÚP NGƯỜI CƠ-TU SẢN XUẤT LƯƠNG THỰC</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -345,7 +373,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN GIÚP NGƯỜI CƠ-TU XÂY NHÀ PHÂN BÓN HỮU CƠ</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -405,7 +433,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between;  height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN GIÚP TRẺ EM CƠ-TU CÓ BỮA SÁNG DINH DƯỠNG </h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -479,7 +507,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">DỰ ÁN DẠY ÂM NHẠC DÂN TỘC CHO TRẺ EM CƠ-TU</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -524,7 +552,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN MỞ LỚP DẠY VẼ TRẺ EM LÀNG PÀ-CĂNG</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -566,7 +594,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">DỰ ÁN DẠY TIẾNG ANH CHO TRẺ EM LÀNG PÀ-CĂNG</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -609,7 +637,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN HỖ TRỢ CÔNG CỤ HỌC TẬP CHO TRẺ EM CƠ-TU</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 

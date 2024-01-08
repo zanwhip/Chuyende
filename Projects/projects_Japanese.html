@@ -227,8 +227,17 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; align-items: center; ">
                                             <h5 class="mb-1">梅雨前の食と衣を応援～2023</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
+                                        <div id="imageModal" class="modal">
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <span class="close" onclick="closeImageModal()">&times;</span>
+                                              <p>Chia sẻ đường link của trang web này <br> để mời gọi thêm nhiều người cùng tham gia:</p>
+                                                <input type="text" value="http://127.0.0.1:5501/project-detail-comlete.html" id="shareLinkInput" readonly>
+                                                <button onclick="copyToClipboard()">Sao chép link</button>
+                                            </div>
+                                          </div>
                                         <p>時期：2023年7月</p>
                                         <p>場所 : クアンナム省ナムザン地区カディコミューンパチャン村</p>
                                         <p>パチャン村の30家族</p>
@@ -264,6 +273,24 @@
 
                     </div>
                 </div>
+                <script>
+                    function openImageModal() {
+                        document.getElementById('imageModal').style.display = 'block';
+                    }
+
+                    function closeImageModal() {
+                        document.getElementById('imageModal').style.display = 'none';
+                    }
+  
+                    function copyToClipboard() {
+                        const copyText = document.getElementById('shareLinkInput');
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+                        document.execCommand('copy');
+                        alert('Link copied to clipboard!');
+                    }
+  
+                </script>
             </section>
 
 
@@ -285,7 +312,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">CO-TUの人々の食糧生産を支援するプロジェクト</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -345,7 +372,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">CO-TU の人々が有機肥料ハウスを建てるのを支援するプロジェクト</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -405,7 +432,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between;  height: 110px ">
                                             <h5 class="mb-3">CO-TUの子供たちに栄養のある朝食を食べてもらうためのプロジェクト </h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -479,7 +506,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">コトゥの子供たちに民族音楽を教えるプロジェクト</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -525,7 +552,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">パチャン村の子供たちに絵を教えるプロジェクト</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -569,7 +596,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">評議会の子供たちへの英語教育プロジェクト</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -614,7 +641,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">CO-TUの子供たちのための学習ツールを支援するプロジェクト</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 

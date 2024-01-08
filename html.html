@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Your Website</title>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="content">
+      
+      <!-- Button to Open Modal -->
+      <button class="open-btn" onclick="openModal()">Share Link</button>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>Chia sẻ đường link của trang web này để mời gọi thêm nhiều người cùng tham gia:</p>
+          <input type="text" value="http://127.0.0.1:5500/project.html" id="shareLinkInput" readonly>
+          <button onclick="copyToClipboard()">Sao chép link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
