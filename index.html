@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Kind Heart Charity - Free Bootstrap 5.2.2 CSS Template</title>
+    <title>Smile Eye Charity</title>
 
     <!-- CSS FILES -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -15,26 +15,21 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
     <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet" />
-
-    <!--
-
-TemplateMo 581 Kind Heart Charity
-
-https://templatemo.com/tm-581-kind-heart-charity
-
--->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body id="section_1">
     <header class="site-header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-12 d-flex flex-wrap">
-            <!-- <p class="d-flex me-4 mb-0">
-              <i class="bi-geo-alt me-2"></i>
-              470 Tran Dai Nghia, Da Nang, Viet Nam
-            </p> -->
-          </div>
+          <div class="col-lg-6 col-12 d-flex flex-wrap"></div>
 
           <div class="col-lg-6 col-12 ms-auto d-lg-block d-none">
             <ul class="social-icon">
@@ -53,13 +48,53 @@ https://templatemo.com/tm-581-kind-heart-charity
                 </a>
               </li>
               <li class="social-icon-item">
-                <div class="custom-select">
-                  <select id="language-select" class="language-select">
-                    <option value="en" selected>English</option>
-                    <option value="vi">Vietnamese</option>
-                    <option value="fr">French</option>
-                    <option value="jp">Japan</option>
-                  </select>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-default dropdown-toggle"
+                    style="color: white"
+                    type="button"
+                    id="dropdownMenu1"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    <img
+                      src="images/icons/english.png"
+                      width="20"
+                      height="20"
+                    />
+                    English
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="p-2">
+                      <a href="indexVN.html">
+                        <img
+                          src="images/icons/vietnam.png"
+                          width="17px"
+                          class="me-2"
+                        />Vietnamese</a
+                      >
+                    </li>
+                    <li class="p-2">
+                      <a href="indexJP.html">
+                        <img
+                          src="images/icons/japanese.png"
+                          width="17px"
+                          class="me-2"
+                        />Japanese</a
+                      >
+                    </li>
+                    <li class="p-2">
+                      <a href="indexFr.html">
+                        <img
+                          src="images/icons/france.png"
+                          width="14px"
+                          class="me-2"
+                        />French</a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -74,10 +109,10 @@ https://templatemo.com/tm-581-kind-heart-charity
           <img
             src="images/logo.png"
             class="logo img-fluid"
-            alt="Kind Heart Charity"
+            alt="Smile Eye Charity"
           />
           <span>
-            Kind Heart Charity
+            Smile Eye Charity
             <small>Non-profit Organization</small>
           </span>
         </a>
@@ -99,28 +134,15 @@ https://templatemo.com/tm-581-kind-heart-charity
             <li class="nav-item">
               <a class="nav-link click-scroll" href="#top">Home</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link click-scroll" href="#section_2">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link click-scroll" href="#section_3">Causes</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link click-scroll" href="#section_4">Volunteer</a>
-            </li>
-
             <li class="nav-item dropdown">
               <a
                 class="nav-link click-scroll dropdown-toggle"
-                href="#section_5"
+                href=""
                 id="navbarLightDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >News</a
+                >Projects</a
               >
 
               <ul
@@ -128,15 +150,30 @@ https://templatemo.com/tm-581-kind-heart-charity
                 aria-labelledby="navbarLightDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="news.html">News Listing</a>
+                  <a class="dropdown-item" href="#section_3a">Completed</a>
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="news-detail.html"
-                    >News Detail</a
-                  >
+                  <a class="dropdown-item" href="#section_3b">Processing</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#section_3c"> Upcoming</a>
                 </li>
               </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_3">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_4"
+                >Contributors</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link click-scroll" href="#section_4">Q&A</a>
             </li>
 
             <li class="nav-item">
@@ -147,7 +184,7 @@ https://templatemo.com/tm-581-kind-heart-charity
               <a
                 class="nav-link custom-btn custom-border-btn btn"
                 href="donate.html"
-                >Donate</a
+                >Contribute</a
               >
             </li>
           </ul>
@@ -201,7 +238,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                             sustainable ways.
                           </p>
                           <p data-aos="fade-left" data-aos-delay="300">
-                            <a href="#" class="custom-btn btn mt-3"
+                            <a href="#" class="custom-btn-banner btn mt-3"
                               >Contribute</a
                             >
                           </p>
@@ -275,7 +312,7 @@ https://templatemo.com/tm-581-kind-heart-charity
           <div class="row">
             <div class="col-lg-6 col-12 mb-5 mb-lg-0">
               <img
-                src="images/group-people-volunteering-foodbank-poor-people.jpg"
+                src="images/our_story.png"
                 class="custom-text-box-image img-fluid"
                 alt=""
               />
@@ -288,34 +325,38 @@ https://templatemo.com/tm-581-kind-heart-charity
                 <h5 class="mb-3">Smile Eye Charity, Non-Profit Organization</h5>
 
                 <p class="mb-0">
-                  This is a Bootstrap 5.2.2 CSS template for charity
-                  organization websites. You can feel free to use it. Please
-                  tell your friends about TemplateMo website. Thank you. HTML
-                  CSS files updated on 20 Oct 2022.
+                  How do you feel when you see the children in the above
+                  picture? I have met them in their village and in their school.
+                  The more I look at them, the more I feel choked up and I burst
+                  into tears. I feel strong compassion and love for children and
+                  people. These children are of the Co-Tu ethnic minority. The
+                  children and the honest people here inspired me to pursue my
+                  dream of volunteer. I will organize specific and practical
+                  charity projects and programs to support people in difficult
+                  areas. The immediate goal is to help them to have enough food.
+                  The next goal is to support them improve their skills. The
+                  goals will be achieved in a sustainable ways. If you have the
+                  same feelings as me, and have the same dreams as me, please
+                  join these charity projects with me. Our sincere participation
+                  will bring a lot of happiness to all parties. Our loves will
+                  help society develop and spread love.
                 </p>
+                <div class="founder">
+                  <p>
+                    <i>Dinh Thi Dong Phuong, Founder of Smile Eye Charity.</i>
+                  </p>
+                </div>
               </div>
 
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                   <div class="custom-text-box mb-lg-0">
-                    <h5 class="mb-3">Our Mission</h5>
-
                     <p>
-                      Sed leo nisl, posuere at molestie ac, suscipit auctor quis
-                      metus
+                      “When you support others, you not only change their lives
+                      but also create a chain of positive futures. Charity has a
+                      ripple effect, and small actions can bring big results in
+                      the future. “
                     </p>
-
-                    <ul class="custom-list mt-2">
-                      <li class="custom-list-item d-flex">
-                        <i class="bi-check custom-text-box-icon me-2"></i>
-                        Charity Theme
-                      </li>
-
-                      <li class="custom-list-item d-flex">
-                        <i class="bi-check custom-text-box-icon me-2"></i>
-                        Semantic HTML
-                      </li>
-                    </ul>
                   </div>
                 </div>
 
@@ -334,7 +375,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                         <span class="counter-number-text"></span>
                       </div>
 
-                      <span class="counter-text">Founded</span>
+                      <span class="counter-text">Projects</span>
                     </div>
 
                     <div class="counter-thumb mt-4">
@@ -369,7 +410,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 
             <div class="col-lg-5 col-md-5 col-12">
               <img
-                src="images/portrait-volunteer-who-organized-donations-charity.jpg"
+                src="images/mrsDongPhuong.png"
                 class="about-image ms-lg-auto bg-light shadow-lg img-fluid"
                 alt=""
                 style="
@@ -438,39 +479,71 @@ https://templatemo.com/tm-581-kind-heart-charity
                 </p>
 
                 <p>Join the projects to experience these miracles with us.</p>
-
-                <!-- <ul class="social-icon mt-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-twitter"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-facebook"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
-                            </li>
-                        </ul> -->
               </div>
             </div>
           </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-7 col-12">
+              <div class="custom-text-block">
+                <h2 class="mb-0">Gérard Kucharski</h2>
+
+                <p class="text-muted mb-lg-4 mb-md-4">
+                  Email : Kucger07@gmail.com <br />
+                </p>
+
+                <p>
+                  I have decided to join this project to experience many
+                  activities which I have never experienced before. Like many of
+                  us, I like something challenging and contributive to people
+                  and environment. I have joined many activities such as
+                  gardening, planting, cooking, etc. and they are very
+                  interesting. I feel more confident, braver, and happier after
+                  I join this project. I feel love myself more, and understand
+                  people more. I have joined many activities with the founder,
+                  Ms. Phuong. We have mentored children who are afraid of water
+                  so that they can get familiar with water and be able to swim.
+                  We joined English classes to help children who are afraid of
+                  speaking English so that they feel happy with playing and
+                  communicating. This organization is a small structure that
+                  uses the funds raised in full to help people directly. The
+                  whole project is planed for 5 years including many small
+                  projects to improve living standard and life skills for these
+                  villagers. It develops the existing know-how, respect for the
+                  environment, collective and personal development, sharing,
+                  etc. It's a wonderful project that I invite you to join, to
+                  share, to give hope to all these people these men these women
+                  their children to this magnificent village.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-12">
+              <img
+                src="images/contributor.png"
+                class="about-image ms-lg-auto bg-light shadow-lg img-fluid"
+                alt=""
+                style="
+                  width: 100%;
+                  max-width: 100%;
+                  height: auto;
+                  margin-top: 100px;
+                "
+              />
+            </div>
+          </div>
+        </div>
       </section>
+      <section class="about-section section-padding"></section>
 
       <section class="cta-section section-padding section-bg">
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-5 col-12 ms-auto">
-              <h2 class="mb-0">
-                Make an impact. <br />
-                Save lives.
-              </h2>
+              <h2 class="mb-0">Love grows by giving. <br /></h2>
             </div>
 
             <div class="col-lg-5 col-12">
-              <a href="#" class="me-4">Make a donation</a>
-
               <a href="#section_4" class="custom-btn btn smoothscroll"
                 >Become a volunteer</a
               >
@@ -483,29 +556,195 @@ https://templatemo.com/tm-581-kind-heart-charity
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-12 text-center mb-4">
-              <h2>Our Causes</h2>
+              <h2>Our Projects</h2>
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
               <div class="custom-block-wrap">
                 <img
-                  src="images/causes/group-african-kids-paying-attention-class.jpg"
+                  src="../images//Process1.jpg"
                   class="custom-block-image img-fluid"
-                  alt=""
+                  style="width: 450px; height: 240px"
                 />
 
                 <div class="custom-block">
                   <div class="custom-block-body">
-                    <h5 class="mb-3">Children Education</h5>
-
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        height: 110px;
+                      "
+                    >
+                      <h5 class="mb-3">
+                        PROJECT TO HELP CO-TU PEOPLE PRODUCE FOOD
+                      </h5>
+                      <img
+                        src="../images//icons/shareicon.png"
+                        style="width: 40px; height: 40px; margin-bottom: 20px"
+                        onclick="openImageModal()"
+                      />
+                    </div>
+                    <!-- Modal -->
+                    <div id="imageModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close" onclick="closeImageModal()"
+                          >&times;</span
+                        >
+                        <p>
+                          Chia sẻ đường link của trang web này <br />
+                          để mời gọi thêm nhiều người cùng tham gia:
+                        </p>
+                        <input
+                          type="text"
+                          value="http://127.0.0.1:5501/project-detail-comlete.html"
+                          id="shareLinkInput"
+                          readonly
+                        />
+                        <button1 onclick="copyToClipboard()"
+                          >Sao chép link</button1
+                        >
+                      </div>
+                    </div>
+                    <p>Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</p>
                     <p>
-                      Lorem Ipsum dolor sit amet, consectetur adipsicing kengan
-                      omeg kohm tokito
+                      Place : Pà-căng village, Cà-dy commune, Nam Giang
+                      district, Quang Nam province
                     </p>
+                    <p>30 families of the Pà-căng village</p>
 
                     <div class="progress mt-4">
                       <div
-                        class="progress-bar w-75"
+                        class="progress-bar w-25"
+                        role="progressbar"
+                        aria-valuenow="20"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+
+                    <div class="d-flex align-items-center my-2">
+                      <p class="mb-0">
+                        <strong>Raised:</strong>
+                        20%
+                      </p>
+
+                      <p class="ms-auto mb-0">
+                        <strong>Goal:</strong>
+                        $9.000
+                      </p>
+                    </div>
+                    <div class="d-flex align-items-center my-2">
+                      <p class="mb-0">
+                        <strong>Loves:</strong>
+                        2000
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-left: 30px;
+                    "
+                  >
+                    <a
+                      href="donate.html"
+                      class="custom-btn btn"
+                      style="flex: 50%; border-radius: 20px"
+                      >Donate</a
+                    >
+                    <div>
+                      <img
+                        src="../images//icons/love.gif"
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          margin: 5px;
+                          flex: 25%;
+                        "
+                        alt="Love icon"
+                      />
+                    </div>
+
+                    <div>
+                      <img
+                        src="../images//icons/detail.png"
+                        style="
+                          width: 40px;
+                          height: 5 0px;
+                          margin: 5px;
+                          flex: 15%;
+                        "
+                        alt="Detail icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+              <div class="custom-block-wrap">
+                <img
+                  src="../images//Process2.jpg"
+                  class="custom-block-image img-fluid"
+                  style="width: 450px; height: 240px"
+                />
+
+                <div class="custom-block">
+                  <div class="custom-block-body">
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        height: 110px;
+                      "
+                    >
+                      <h5 class="mb-3">
+                        PROJECT TO HELP CO-TU PEOPLE BUILD AN ORGANIC FERTILIZER
+                        HOUSE
+                      </h5>
+                      <img
+                        src="../images//icons/shareicon.png"
+                        style="width: 40px; height: 40px; margin-bottom: 20px"
+                        onclick="openImageModal()"
+                      />
+                    </div>
+                    <!-- Modal -->
+                    <div id="imageModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close" onclick="closeImageModal()"
+                          >&times;</span
+                        >
+                        <p>
+                          Chia sẻ đường link của trang web này <br />
+                          để mời gọi thêm nhiều người cùng tham gia:
+                        </p>
+                        <input
+                          type="text"
+                          value="http://127.0.0.1:5501/project-detail-comlete.html"
+                          id="shareLinkInput"
+                          readonly
+                        />
+                        <button1 onclick="copyToClipboard()"
+                          >Sao chép link</button1
+                        >
+                      </div>
+                    </div>
+
+                    <p>Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</p>
+                    <p>
+                      Place : Pà-căng village, Cà-dy commune, Nam Giang
+                      district, Quang Nam province
+                    </p>
+                    <p>30 families of the Pà-căng village</p>
+
+                    <div class="progress mt-4">
+                      <div
+                        class="progress-bar w-25"
                         role="progressbar"
                         aria-valuenow="75"
                         aria-valuemin="0"
@@ -516,17 +755,60 @@ https://templatemo.com/tm-581-kind-heart-charity
                     <div class="d-flex align-items-center my-2">
                       <p class="mb-0">
                         <strong>Raised:</strong>
-                        $18,500
+                        20%
                       </p>
 
                       <p class="ms-auto mb-0">
                         <strong>Goal:</strong>
-                        $32,000
+                        $4.800
+                      </p>
+                    </div>
+                    <div class="d-flex align-items-center my-2">
+                      <p class="mb-0">
+                        <strong>Loves:</strong>
+                        2000
                       </p>
                     </div>
                   </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-left: 30px;
+                    "
+                  >
+                    <a
+                      href="donate.html"
+                      class="custom-btn btn"
+                      style="flex: 50%; border-radius: 20px"
+                      >Donate</a
+                    >
+                    <div>
+                      <img
+                        src="../images//icons/love.gif"
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          margin: 5px;
+                          flex: 25%;
+                        "
+                        alt="Love icon"
+                      />
+                    </div>
 
-                  <a href="donate.html" class="custom-btn btn">Donate now</a>
+                    <div>
+                      <img
+                        src="../images//icons/detail.png"
+                        style="
+                          width: 40px;
+                          height: 5 0px;
+                          margin: 5px;
+                          flex: 15%;
+                        "
+                        alt="Detail icon"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -534,188 +816,128 @@ https://templatemo.com/tm-581-kind-heart-charity
             <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
               <div class="custom-block-wrap">
                 <img
-                  src="images/causes/poor-child-landfill-looks-forward-with-hope.jpg"
+                  src="../images//causes/group-african-kids-paying-attention-class.jpg"
                   class="custom-block-image img-fluid"
-                  alt=""
+                  style="width: 450px; height: 240px"
                 />
 
                 <div class="custom-block">
                   <div class="custom-block-body">
-                    <h5 class="mb-3">Poverty Development</h5>
-
-                    <p>
-                      Sed leo nisl, posuere at molestie ac, suscipit auctor
-                      mauris. Etiam quis metus tempor
-                    </p>
-
-                    <div class="progress mt-4">
-                      <div
-                        class="progress-bar w-50"
-                        role="progressbar"
-                        aria-valuenow="50"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-
-                    <div class="d-flex align-items-center my-2">
-                      <p class="mb-0">
-                        <strong>Raised:</strong>
-                        $27,600
-                      </p>
-
-                      <p class="ms-auto mb-0">
-                        <strong>Goal:</strong>
-                        $60,000
-                      </p>
-                    </div>
-                  </div>
-
-                  <a href="donate.html" class="custom-btn btn">Donate now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="custom-block-wrap">
-                <img
-                  src="images/causes/african-woman-pouring-water-recipient-outdoors.jpg"
-                  class="custom-block-image img-fluid"
-                  alt=""
-                />
-
-                <div class="custom-block">
-                  <div class="custom-block-body">
-                    <h5 class="mb-3">Supply drinking water</h5>
-
-                    <p>
-                      Orci varius natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus
-                    </p>
-
-                    <div class="progress mt-4">
-                      <div
-                        class="progress-bar w-100"
-                        role="progressbar"
-                        aria-valuenow="100"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-
-                    <div class="d-flex align-items-center my-2">
-                      <p class="mb-0">
-                        <strong>Raised:</strong>
-                        $84,600
-                      </p>
-
-                      <p class="ms-auto mb-0">
-                        <strong>Goal:</strong>
-                        $100,000
-                      </p>
-                    </div>
-                  </div>
-
-                  <a href="donate.html" class="custom-btn btn">Donate now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="volunteer-section section-padding" id="section_4">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-12">
-              <h2 class="text-white mb-4">Volunteer</h2>
-
-              <form
-                class="custom-form volunteer-form mb-5 mb-lg-0"
-                action="#"
-                method="post"
-                role="form"
-              >
-                <h3 class="mb-4">Become a volunteer today</h3>
-
-                <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input
-                      type="text"
-                      name="volunteer-name"
-                      id="volunteer-name"
-                      class="form-control"
-                      placeholder="Jack Doe"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-lg-6 col-12">
-                    <input
-                      type="email"
-                      name="volunteer-email"
-                      id="volunteer-email"
-                      pattern="[^ @]*@[^ @]*"
-                      class="form-control"
-                      placeholder="Jackdoe@gmail.com"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-lg-6 col-12">
-                    <input
-                      type="text"
-                      name="volunteer-subject"
-                      id="volunteer-subject"
-                      class="form-control"
-                      placeholder="Subject"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-lg-6 col-12">
-                    <div class="input-group input-group-file">
-                      <input
-                        type="file"
-                        class="form-control"
-                        id="inputGroupFile02"
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        height: 110px;
+                      "
+                    >
+                      <h5 class="mb-3">
+                        PROJECT TO HELP CO-TU CHILDREN TO HAVE NUTRITIONAL
+                        BREAKFAST
+                      </h5>
+                      <img
+                        src="../images//icons/shareicon.png"
+                        style="width: 40px; height: 40px; margin-bottom: 20px"
+                        onclick="openImageModal()"
                       />
+                    </div>
+                    <!-- Modal -->
+                    <div id="imageModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close" onclick="closeImageModal()"
+                          >&times;</span
+                        >
+                        <p>
+                          Chia sẻ đường link của trang web này <br />
+                          để mời gọi thêm nhiều người cùng tham gia:
+                        </p>
+                        <input
+                          type="text"
+                          value="http://127.0.0.1:5501/project-detail-comlete.html"
+                          id="shareLinkInput"
+                          readonly
+                        />
+                        <button1 onclick="copyToClipboard()"
+                          >Sao chép link</button1
+                        >
+                      </div>
+                    </div>
 
-                      <label class="input-group-text" for="inputGroupFile02"
-                        >Upload your CV</label
-                      >
+                    <p>Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</p>
+                    <p>
+                      Place : Pà-căng village, Cà-dy commune, Nam Giang
+                      district, Quang Nam province
+                    </p>
+                    <p>30 families of the Pà-căng village</p>
 
-                      <i class="bi-cloud-arrow-up ms-auto"></i>
+                    <div class="progress mt-4">
+                      <div
+                        class="progress-bar w-25"
+                        role="progressbar"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+
+                    <div class="d-flex align-items-center my-2">
+                      <p class="mb-0">
+                        <strong>Raised:</strong>
+                        20%
+                      </p>
+
+                      <p class="ms-auto mb-0">
+                        <strong>Goal:</strong>
+                        $24.800
+                      </p>
+                    </div>
+                    <div class="d-flex align-items-center my-2">
+                      <p class="mb-0">
+                        <strong>Loves:</strong>
+                        2000
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-left: 30px;
+                    "
+                  >
+                    <a
+                      href="donate.html"
+                      class="custom-btn btn"
+                      style="flex: 50%; border-radius: 20px"
+                      >Donate</a
+                    >
+                    <div>
+                      <img
+                        src="../images//icons/love.gif"
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          margin: 5px;
+                          flex: 25%;
+                        "
+                        alt="Love icon"
+                      />
+                    </div>
+
+                    <div>
+                      <img
+                        src="../images//icons/detail.png"
+                        style="
+                          width: 40px;
+                          height: 5 0px;
+                          margin: 5px;
+                          flex: 15%;
+                        "
+                        alt="Detail icon"
+                      />
                     </div>
                   </div>
                 </div>
-
-                <textarea
-                  name="volunteer-message"
-                  rows="3"
-                  class="form-control"
-                  id="volunteer-message"
-                  placeholder="Comment (Optional)"
-                ></textarea>
-
-                <button type="submit" class="form-control">Submit</button>
-              </form>
-            </div>
-
-            <div class="col-lg-6 col-12">
-              <img
-                src="images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg"
-                class="volunteer-image img-fluid"
-                alt=""
-              />
-
-              <div class="custom-block-body text-center">
-                <h4 class="text-white mt-lg-3 mb-lg-3">About Volunteering</h4>
-
-                <p class="text-white">
-                  Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg
-                  kohm tokito Professional charity theme based
-                </p>
               </div>
             </div>
           </div>
@@ -741,8 +963,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                   </a>
 
                   <div class="news-category-block">
-                    <a href="#" class="category-block-link"> Lifestyle, </a>
-
                     <a href="#" class="category-block-link">
                       Clothing Donation
                     </a>
@@ -761,92 +981,32 @@ https://templatemo.com/tm-581-kind-heart-charity
                     <div class="news-block-author mx-5">
                       <p>
                         <i class="bi-person custom-icon me-1"></i>
-                        By Admin
+                        By Dinh Thi Dong Phuong
                       </p>
                     </div>
 
-                    <div class="news-block-comment">
-                      <p>
-                        <i class="bi-chat-left custom-icon me-1"></i>
-                        32 Comments
-                      </p>
-                    </div>
+                    <div class="news-block-comment"></div>
                   </div>
 
                   <div class="news-block-title mb-2">
                     <h4>
                       <a href="news-detail.html" class="news-block-title-link"
-                        >Clothing donation to urban area</a
+                        >SUPPORT FOOD AND CLOTHES BEFORE RAINY SEASONS-2023</a
                       >
                     </h4>
                   </div>
 
                   <div class="news-block-body">
                     <p>
-                      Lorem Ipsum dolor sit amet, consectetur adipsicing kengan
-                      omeg kohm tokito Professional charity theme based on
-                      Bootstrap
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="news-block mt-3">
-                <div class="news-block-top">
-                  <a href="news-detail.html">
-                    <img
-                      src="images/news/medium-shot-people-collecting-foodstuff.jpg"
-                      class="news-image img-fluid"
-                      alt=""
-                    />
-                  </a>
-
-                  <div class="news-category-block">
-                    <a href="#" class="category-block-link"> Food, </a>
-
-                    <a href="#" class="category-block-link"> Donation, </a>
-
-                    <a href="#" class="category-block-link"> Caring </a>
-                  </div>
-                </div>
-
-                <div class="news-block-info">
-                  <div class="d-flex mt-2">
-                    <div class="news-block-date">
-                      <p>
-                        <i class="bi-calendar4 custom-icon me-1"></i>
-                        October 20, 2036
-                      </p>
-                    </div>
-
-                    <div class="news-block-author mx-5">
-                      <p>
-                        <i class="bi-person custom-icon me-1"></i>
-                        By Admin
-                      </p>
-                    </div>
-
-                    <div class="news-block-comment">
-                      <p>
-                        <i class="bi-chat-left custom-icon me-1"></i>
-                        35 Comments
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="news-block-title mb-2">
-                    <h4>
-                      <a href="news-detail.html" class="news-block-title-link"
-                        >Food donation area</a
-                      >
-                    </h4>
-                  </div>
-
-                  <div class="news-block-body">
-                    <p>
-                      Sed leo nisl, posuere at molestie ac, suscipit auctor
-                      mauris. Etiam quis metus elementum, tempor risus vel,
-                      condimentum orci
+                      Business owner of Cortex Textile (www.cortextextile.com)
+                      and his employees prepared food, clothes, toothbrushes and
+                      toothpaste, sanitary napkins for girls, milk for special
+                      children, and more. They personally brought the items back
+                      to the village and explained to the villagers how to use
+                      them with love. The villagers welcomed everyone with a
+                      lunch of special dishes from the mountains and forests. We
+                      all had a fun together. We feel happy because all of us
+                      have a warmer winter.
                     </p>
                   </div>
                 </div>
@@ -854,26 +1014,6 @@ https://templatemo.com/tm-581-kind-heart-charity
             </div>
 
             <div class="col-lg-4 col-12 mx-auto">
-              <form
-                class="custom-form search-form"
-                action="#"
-                method="get"
-                role="form"
-              >
-                <input
-                  name="search"
-                  type="search"
-                  class="form-control"
-                  id="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-
-                <button type="submit" class="form-control">
-                  <i class="bi-search"></i>
-                </button>
-              </form>
-
               <h5 class="mt-5 mb-3">Recent news</h5>
 
               <div class="news-block news-block-two-col d-flex mt-4">
@@ -891,7 +1031,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                   <div class="news-block-title mb-2">
                     <h6>
                       <a href="news-detail.html" class="news-block-title-link"
-                        >Food donation area</a
+                        >Food donation</a
                       >
                     </h6>
                   </div>
@@ -920,7 +1060,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                   <div class="news-block-title mb-2">
                     <h6>
                       <a href="news-detail.html" class="news-block-title-link"
-                        >Volunteering Clean</a
+                        >Volunteering class</a
                       >
                     </h6>
                   </div>
@@ -933,76 +1073,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                   </div>
                 </div>
               </div>
-
-              <div class="category-block d-flex flex-column">
-                <h5 class="mb-3">Categories</h5>
-
-                <a href="#" class="category-block-link">
-                  Drinking water
-                  <span class="badge">20</span>
-                </a>
-
-                <a href="#" class="category-block-link">
-                  Food Donation
-                  <span class="badge">30</span>
-                </a>
-
-                <a href="#" class="category-block-link">
-                  Children Education
-                  <span class="badge">10</span>
-                </a>
-
-                <a href="#" class="category-block-link">
-                  Poverty Development
-                  <span class="badge">15</span>
-                </a>
-
-                <a href="#" class="category-block-link">
-                  Clothing Donation
-                  <span class="badge">20</span>
-                </a>
-              </div>
-
-              <div class="tags-block">
-                <h5 class="mb-3">Tags</h5>
-
-                <a href="#" class="tags-block-link"> Donation </a>
-
-                <a href="#" class="tags-block-link"> Clothing </a>
-
-                <a href="#" class="tags-block-link"> Food </a>
-
-                <a href="#" class="tags-block-link"> Children </a>
-
-                <a href="#" class="tags-block-link"> Education </a>
-
-                <a href="#" class="tags-block-link"> Poverty </a>
-
-                <a href="#" class="tags-block-link"> Clean Water </a>
-              </div>
-
-              <form
-                class="custom-form subscribe-form"
-                action="#"
-                method="get"
-                role="form"
-              >
-                <h5 class="mb-4">Newsletter Form</h5>
-
-                <input
-                  type="email"
-                  name="subscribe-email"
-                  id="subscribe-email"
-                  pattern="[^ @]*@[^ @]*"
-                  class="form-control"
-                  placeholder="Email Address"
-                  required
-                />
-
-                <div class="col-lg-12 col-12">
-                  <button type="submit" class="form-control">Subscribe</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -1012,7 +1082,7 @@ https://templatemo.com/tm-581-kind-heart-charity
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-12 mx-auto">
-              <h2 class="mb-lg-3">Happy Customers</h2>
+              <h2 class="mb-lg-3">Our Volunteer</h2>
 
               <div
                 id="testimonial-carousel"
@@ -1023,13 +1093,26 @@ https://templatemo.com/tm-581-kind-heart-charity
                   <div class="carousel-item active">
                     <div class="carousel-caption">
                       <h4 class="carousel-title">
-                        Lorem Ipsum dolor sit amet, consectetur adipsicing
-                        kengan omeg kohm tokito charity theme
+                        Kindness is the language which the deaf can hear and the
+                        blind can see.
                       </h4>
 
                       <small class="carousel-name"
-                        ><span class="carousel-name-title">Maria</span>,
-                        Boss</small
+                        ><span class="carousel-name-title">Lê Khánh Đạt</span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <h4 class="carousel-title">
+                        Kindness is a gift everyone can afford to give.
+                      </h4>
+
+                      <small class="carousel-name"
+                        ><span class="carousel-name-title"
+                          >Trương Thị Hương Giang</span
+                        ></small
                       >
                     </div>
                   </div>
@@ -1037,13 +1120,13 @@ https://templatemo.com/tm-581-kind-heart-charity
                   <div class="carousel-item">
                     <div class="carousel-caption">
                       <h4 class="carousel-title">
-                        Sed leo nisl, posuere at molestie ac, suscipit auctor
-                        mauris quis metus tempor orci
+                        Your greatness is not what you have, it's what you give.
                       </h4>
 
                       <small class="carousel-name"
-                        ><span class="carousel-name-title">Thomas</span>,
-                        Partner</small
+                        ><span class="carousel-name-title"
+                          >Bùi Thị Phương Hà</span
+                        ></small
                       >
                     </div>
                   </div>
@@ -1051,27 +1134,43 @@ https://templatemo.com/tm-581-kind-heart-charity
                   <div class="carousel-item">
                     <div class="carousel-caption">
                       <h4 class="carousel-title">
-                        Lorem Ipsum dolor sit amet, consectetur adipsicing
-                        kengan omeg kohm tokito charity theme
+                        Do your little bit of good where you are; it's those
+                        little bits of good put together that overwhelm the
+                        world.
                       </h4>
 
                       <small class="carousel-name"
-                        ><span class="carousel-name-title">Jane</span>,
-                        Advisor</small
+                        ><span class="carousel-name-title"
+                          >Lê Văn Hải</span
+                        ></small
                       >
                     </div>
                   </div>
-
                   <div class="carousel-item">
                     <div class="carousel-caption">
                       <h4 class="carousel-title">
-                        Sed leo nisl, posuere at molestie ac, suscipit auctor
-                        mauris quis metus tempor orci
+                        Wherever there is a human in need, there is an
+                        opportunity for kindness and to make a difference.
                       </h4>
 
                       <small class="carousel-name"
-                        ><span class="carousel-name-title">Bob</span>,
-                        Entreprenuer</small
+                        ><span class="carousel-name-title"
+                          >Nguyễn Văn Hùng</span
+                        ></small
+                      >
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <h4 class="carousel-title">
+                        Every act of kindness grows the spirit and strengthens
+                        the soul.
+                      </h4>
+
+                      <small class="carousel-name"
+                        ><span class="carousel-name-title"
+                          >Phạm Văn Nam</span
+                        ></small
                       >
                     </div>
                   </div>
@@ -1083,7 +1182,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                       class="active"
                     >
                       <img
-                        src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg"
+                        src="images/volunteer/lkdat.png"
                         class="img-fluid rounded-circle avatar-image"
                         alt="avatar"
                       />
@@ -1095,7 +1194,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                       class=""
                     >
                       <img
-                        src="images/avatar/portrait-young-redhead-bearded-male.jpg"
+                        src="images/volunteer/giangtth.png"
                         class="img-fluid rounded-circle avatar-image"
                         alt="avatar"
                       />
@@ -1107,7 +1206,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                       class=""
                     >
                       <img
-                        src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg"
+                        src="images/volunteer/habtp.png"
                         class="img-fluid rounded-circle avatar-image"
                         alt="avatar"
                       />
@@ -1119,7 +1218,29 @@ https://templatemo.com/tm-581-kind-heart-charity
                       class=""
                     >
                       <img
-                        src="images/avatar/studio-portrait-emotional-happy-funny.jpg"
+                        src="images/volunteer/hailv.png"
+                        class="img-fluid rounded-circle avatar-image"
+                        alt="avatar"
+                      />
+                    </li>
+                    <li
+                      data-bs-target="#testimonial-carousel"
+                      data-bs-slide-to="4"
+                      class=""
+                    >
+                      <img
+                        src="images/volunteer/hungnv.png"
+                        class="img-fluid rounded-circle avatar-image"
+                        alt="avatar"
+                      />
+                    </li>
+                    <li
+                      data-bs-target="#testimonial-carousel"
+                      data-bs-slide-to="5"
+                      class=""
+                    >
+                      <img
+                        src="images/volunteer/nampv.png"
                         class="img-fluid rounded-circle avatar-image"
                         alt="avatar"
                       />
@@ -1131,109 +1252,163 @@ https://templatemo.com/tm-581-kind-heart-charity
           </div>
         </div>
       </section>
-
       <section class="contact-section section-padding" id="section_6">
+        <div class="wrapper">
+          <h1>Frequently Asked Questions</h1>
+          <div class="faq">
+            <button class="accordion">
+              If I participate, where will I stay?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Depends on the specific program. If the program requires
+                participation in practical training at the workplace, we will
+                stay in the village. The organizers will make arrangements for
+                you.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion">
+              Does the project receive monetary sponsorship?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Each project program has detailed content posted on the website.
+                If the program needs financial support, please contact us by
+                email dinhdongphuong@gmail.com or phone number 0962 414 125. You
+                can also transfer money to Smile Eye Charity's account.Account
+                number: Techcombank, 22296699, Smile Eye Charity We will get
+                back to you as soon as we confirm your support.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              I want to mobilize donations for the project. Who do I contact?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Thank you for your sincere support and cooperation. Please call
+                0962 414 125 or email dinhdongphuong@gmail.com to Ms. Phuong for
+                all information on the projects.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion">
+              If we can develop one village, we will also find a way to develop
+              other villages.
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Thank you for your great vision. Yes, all of us are very excited
+                to proceed with the project. We believe in our effort and strong
+                cooperation and love for the development of the people and the
+                village. The project has many programs. These are practical
+                training programs, suitable to the human and natural potential
+                of the region. For the new Pà-cang village, agriculture, green
+                tourism and services are very potential. Therefore, training
+                programs will focus on: • Developing sustainable agriculture and
+                protecting the environment • Develop life skills for children •
+                Improve professional skills, products and services • Develop
+                business skills • Develop communication and foreign language
+                skills Please call 0962 414 125 or email
+                dinhdongphuong@gmail.com for all information and registering to
+                participate.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion">
+              I would like to contribute some ideas to the project. Who do I
+              contact?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Thank you for your sincere advice. Please call 0962 414 125 or
+                email dinhdongphuong@gmail.com to Ms. Phuong.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="volunteer-section section-padding mb-4" id="section_4">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
-              <div class="contact-info-wrap">
-                <h2>Get in touch</h2>
+            <div class="col-lg-6 col-12">
+              <h2 class="text-white mb-4">Contact for contribution</h2>
 
-                <div class="contact-image-wrap d-flex flex-wrap">
-                  <img
-                    src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg"
-                    class="img-fluid avatar-image"
-                    alt=""
-                  />
-
-                  <div class="d-flex flex-column justify-content-center ms-3">
-                    <p class="mb-0">Clara Barton</p>
-                    <p class="mb-0"><strong>HR & Office Manager</strong></p>
-                  </div>
-                </div>
-
-                <div class="contact-info">
-                  <h5 class="mb-3">Contact Infomation</h5>
-
-                  <p class="d-flex mb-2">
-                    <i class="bi-geo-alt me-2"></i>
-                    Akershusstranda 20, 0150 Oslo, Norway
-                  </p>
-
-                  <p class="d-flex mb-2">
-                    <i class="bi-telephone me-2"></i>
-
-                    <a href="tel: 120-240-9600"> 120-240-9600 </a>
-                  </p>
-
-                  <p class="d-flex">
-                    <i class="bi-envelope me-2"></i>
-
-                    <a href="mailto:info@yourgmail.com"> donate@charity.org </a>
-                  </p>
-
-                  <a href="#" class="custom-btn btn mt-3">Get Direction</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-12 mx-auto">
               <form
-                class="custom-form contact-form"
+                class="custom-form volunteer-form mb-5 mb-lg-0"
                 action="#"
                 method="post"
                 role="form"
               >
-                <h2>Contact form</h2>
-
-                <p class="mb-4">
-                  Or, you can just send an email:
-                  <a href="#">info@charity.org</a>
-                </p>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12">
+                <textarea
+                  name="volunteer-message"
+                  rows="3"
+                  class="form-control"
+                  id="volunteer-message"
+                  placeholder="Content"
+                ></textarea>
+                <div class="flex-column">
+                  <div class="col-lg-12 col-12">
                     <input
                       type="text"
-                      name="first-name"
-                      id="first-name"
+                      name="volunteer-name"
+                      id="volunteer-name"
                       class="form-control"
-                      placeholder="Jack"
+                      placeholder="Your Name(*)"
                       required
                     />
                   </div>
 
-                  <div class="col-lg-6 col-md-6 col-12">
+                  <div class="col-lg-12 col-12">
+                    <input
+                      type="email"
+                      name="volunteer-email"
+                      id="volunteer-email"
+                      pattern="[^ @]*@[^ @]*"
+                      class="form-control"
+                      placeholder="Your Email(*)"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-lg-12 col-12">
                     <input
                       type="text"
-                      name="last-name"
-                      id="last-name"
+                      name="volunteer-subject"
+                      id="volunteer-subject"
                       class="form-control"
-                      placeholder="Doe"
-                      required
+                      placeholder="Phone"
                     />
                   </div>
                 </div>
 
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  pattern="[^ @]*@[^ @]*"
-                  class="form-control"
-                  placeholder="Jackdoe@gmail.com"
-                  required
-                />
-
-                <textarea
-                  name="message"
-                  rows="5"
-                  class="form-control"
-                  id="message"
-                  placeholder="What can we help you?"
-                ></textarea>
-
-                <button type="submit" class="form-control">Send Message</button>
+                <button type="submit" class="form-control">Submit</button>
               </form>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <img
+                src="images/logo.png"
+                class="volunteer-image img-fluid"
+                alt=""
+              />
+
+              <div class="custom-block-body text-center">
+                <h4 class="text-white mt-lg-3 mb-lg-3">
+                  A warm smile is the universal language of kindness.
+                </h4>
+              </div>
             </div>
           </div>
         </div>
@@ -1243,32 +1418,59 @@ https://templatemo.com/tm-581-kind-heart-charity
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-12 mb-4">
+          <div
+            class="col-lg-3 col-12 mb-4 align-items-center justify-content-center"
+          >
             <img src="images/logo.png" class="logo img-fluid" alt="" />
+            <span class="span-footer mb-3">Smile Eye Charity</span>
           </div>
 
           <div class="col-lg-4 col-md-6 col-12 mb-4">
-            <h5 class="site-footer-title mb-3">Quick Links</h5>
+            <h5 class="site-footer-title mb-3">Company Communication</h5>
 
-            <ul class="footer-menu">
+            <ul class="footer-menu row">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Our Story</a>
+                <p class="footer-menu-link">Name:</p>
+                <p class="footer-menu-link">SMILE EYE CHARITY CO., LTD</p>
               </li>
 
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Newsroom</a>
+                <p class="footer-menu-link">Tax Number:</p>
+                <p class="footer-menu-link">4001273487</p>
               </li>
 
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Causes</a>
+                <p class="footer-menu-link">Account Number:</p>
+                <ul>
+                  <li>
+                    <p class="footer-menu-link">
+                      Techcombank, 22296699, Smile Eye Charity
+                    </p>
+                  </li>
+                  <li>
+                    <p class="footer-menu-link">
+                      MB Bank, 020166669999, Smile Eye Charity
+                    </p>
+                  </li>
+                </ul>
               </li>
 
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Become a volunteer</a>
-              </li>
+              <li class="footer-menu-item"></li>
 
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Partner with us</a>
+                <div class="d-flex">
+                  <p class="footer-menu-link">Address:</p>
+                  <p class="footer-menu-link">
+                    Thôn Pà-ong, Xã Cà Dy, Huyện Nam Giang, Tỉnh Quảng Nam, Việt
+                    Nam
+                  </p>
+                </div>
+              </li>
+              <li class="footer-menu-item">
+                <div class="d-flex">
+                  <p class="footer-menu-link">Representative:</p>
+                  <p class="footer-menu-link">Mrs. Đinh Thị Đông Phương</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -1279,8 +1481,8 @@ https://templatemo.com/tm-581-kind-heart-charity
             <p class="text-white d-flex mb-2">
               <i class="bi-telephone me-2"></i>
 
-              <a href="tel: 120-240-9600" class="site-footer-link">
-                120-240-9600
+              <a href="tel: 120-240-9600" class="site-footer-link"
+                >Hotline: 0962 414 125
               </a>
             </p>
 
@@ -1288,16 +1490,14 @@ https://templatemo.com/tm-581-kind-heart-charity
               <i class="bi-envelope me-2"></i>
 
               <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                donate@charity.org
+                Email: dinhdongphuong@gmail.com
               </a>
             </p>
 
             <p class="text-white d-flex mt-3">
-              <i class="bi-geo-alt me-2"></i>
-              Akershusstranda 20, 0150 Oslo, Norway
+              <i class="fa-solid fa-briefcase me-2"></i>
+              Working Time: 8h30 - 17h30, Monday - Saturday
             </p>
-
-            <a href="#" class="custom-btn btn mt-3">Get Direction</a>
           </div>
         </div>
       </div>
@@ -1307,38 +1507,8 @@ https://templatemo.com/tm-581-kind-heart-charity
           <div class="row">
             <div class="col-lg-6 col-md-7 col-12">
               <p class="copyright-text mb-0">
-                Copyright © 2036 <a href="#">Kind Heart</a> Charity Org. Design:
-                <a href="https://templatemo.com" target="_blank">TemplateMo</a>
+                Copyright © 2024 <a href="#">Smile Eye</a> Charity Org
               </p>
-            </div>
-
-            <div
-              class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto"
-            >
-              <ul class="social-icon">
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link bi-twitter"></a>
-                </li>
-
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link bi-facebook"></a>
-                </li>
-
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link bi-instagram"></a>
-                </li>
-
-                <li class="social-icon-item">
-                  <a href="#" class="social-icon-link bi-linkedin"></a>
-                </li>
-
-                <li class="social-icon-item">
-                  <a
-                    href="https://youtube.com/templatemo"
-                    class="social-icon-link bi-youtube"
-                  ></a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -1352,5 +1522,118 @@ https://templatemo.com/tm-581-kind-heart-charity
     <script src="js/click-scroll.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+      var acc = document.getElementsByClassName('accordion');
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+          this.parentElement.classList.toggle('active');
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === 'block') {
+            pannel.style.display = 'none';
+          } else {
+            pannel.style.display = 'block';
+          }
+        });
+      }
+    </script>
+    <script>
+      function changeLanguage() {
+        var selectElement = document.getElementById('language-select');
+        var selectedValue = selectElement.value;
+        switch (selectedValue) {
+          case 'en':
+            window.location.href = 'projects.html';
+            break;
+          case 'vi':
+            window.location.href = './projects_Vietnamese.html';
+            break;
+          case 'fr':
+            window.location.href = 'projects_France.html';
+            break;
+          case 'jp':
+            window.location.href = 'projects_Japanese.html';
+            break;
+          default:
+            // Default case, you can handle it accordingly
+            break;
+        }
+      }
+    </script>
+    <script>
+      var langArray = [];
+      $('.vodiapicker option').each(function () {
+        var img = $(this).attr('data-thumbnail');
+        var text = this.innerText;
+        var value = $(this).val();
+        var item =
+          '<li><img src="' +
+          img +
+          '" alt="" value="' +
+          value +
+          '"/><span>' +
+          text +
+          '</span></li>';
+        langArray.push(item);
+      });
+
+      $('#a').html(langArray);
+
+      //Set the button value to the first el of the array
+      $('.btn-select').html(langArray[0]);
+      $('.btn-select').attr('value', 'en');
+
+      //change button stuff on click
+      $('#a li').click(function () {
+        var img = $(this).find('img').attr('src');
+        var value = $(this).find('img').attr('value');
+        var text = this.innerText;
+        var item =
+          '<li><img src="' + img + '" alt="" /><span>' + text + '</span></li>';
+        $('.btn-select').html(item);
+        $('.btn-select').attr('value', value);
+        $('.b').toggle();
+        //console.log(value);
+      });
+
+      $('.btn-select').click(function () {
+        $('.b').toggle();
+      });
+
+      //check local storage for the lang
+      var sessionLang = localStorage.getItem('lang');
+      if (sessionLang) {
+        //find an item with value of sessionLang
+        var langIndex = langArray.indexOf(sessionLang);
+        $('.btn-select').html(langArray[langIndex]);
+        $('.btn-select').attr('value', sessionLang);
+      } else {
+        var langIndex = langArray.indexOf('ch');
+        console.log(langIndex);
+        $('.btn-select').html(langArray[langIndex]);
+        //$('.btn-select').attr('value', 'en');
+      }
+    </script>
+    <script>
+      function openImageModal() {
+        document.getElementById('imageModal').style.display = 'block';
+      }
+
+      function closeImageModal() {
+        document.getElementById('imageModal').style.display = 'none';
+      }
+
+      function copyToClipboard() {
+        const copyText = document.getElementById('shareLinkInput');
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        document.execCommand('copy');
+        alert('Link copied to clipboard!');
+      }
+    </script>
   </body>
 </html>

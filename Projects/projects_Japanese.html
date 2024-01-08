@@ -10,10 +10,11 @@
         <title>Kind Heart Charity - Free Bootstrap 5.2.2 CSS Template</title>
 
         <!-- CSS FILES -->        
-        <link href="../css//bootstrap-icons.css" rel="stylesheet">
-        <link href="../css//bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-icons.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-        <link href="../css//templatemo-kind-heart-charity.css" rel="stylesheet">
+        <link href="../css/templatemo-kind-heart-charity.css" rel="stylesheet">
+        <link href="../css/styles.css" rel="stylesheet">
         
 
     </head>
@@ -23,12 +24,7 @@
         <header class="site-header">
             <div class="container">
               <div class="row">
-                <div class="col-lg-6 col-12 d-flex flex-wrap">
-                  <!-- <p class="d-flex me-4 mb-0">
-                    <i class="bi-geo-alt me-2"></i>
-                    470 Tran Dai Nghia, Da Nang, Viet Nam
-                  </p> -->
-                </div>
+                <div class="col-lg-6 col-12 d-flex flex-wrap"></div>
       
                 <div class="col-lg-6 col-12 ms-auto d-lg-block d-none">
                   <ul class="social-icon">
@@ -47,39 +43,53 @@
                       </a>
                     </li>
                     <li class="social-icon-item">
-                      <div class="custom-select">
-                                          
-<select id="language-select" class="language-select" onchange="changeLanguage()">
-    <option value="en" >English</option>
-    <option value="vi" >Vietnamese</option>
-    <option value="fr">French</option>
-    <option value="jp" selected>Japanese</option>
-  </select>
-  
-  <script>
-  function changeLanguage() {
-    var selectElement = document.getElementById("language-select");
-    var selectedValue = selectElement.value;
-  
-    switch (selectedValue) {
-      case "en":
-        window.location.href = "projects.html";
-        break;
-      case "vi":
-        window.location.href = "./projects_Vietnamese.html";
-        break;
-      case "fr":
-        window.location.href = "projects_France.html";
-        break;
-      case "jp":
-        window.location.href = "projects_Japanese.html";
-        break;
-      default:
-        // Default case, you can handle it accordingly
-        break;
-    }
-  }
-  </script>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-default dropdown-toggle"
+                          style="color: white"
+                          type="button"
+                          id="dropdownMenu1"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="true"
+                        >
+                          <img
+                            src="../images/icons/japanese.png"
+                            width="20"
+                            height="20"
+                          />
+                          Japanese
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li class="p-2">
+                            <a href="projects.html">
+                              <img
+                                src="../images/icons/english.png"
+                                width="17px"
+                                class="me-2"
+                              />English</a
+                            >
+                          </li>
+                          <li class="p-2">
+                            <a href="projects_Vietnamese.html">
+                              <img
+                                src="../images/icons/vietnam.png"
+                                width="17px"
+                                class="me-2"
+                              />Vietnamese</a
+                            >
+                          </li>
+                          <li class="p-2">
+                            <a href="projects_France.html">
+                              <img
+                                src="../images/icons/france.png"
+                                width="14px"
+                                class="me-2"
+                              />French</a
+                            >
+                          </li>
+                        </ul>
                       </div>
                     </li>
                   </ul>
@@ -87,6 +97,7 @@
               </div>
             </div>
           </header>
+      
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
@@ -760,12 +771,12 @@
         </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/counter.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.sticky.js"></script>
+        <script src="../js/click-scroll.js"></script>
+        <script src="../js/counter.js"></script>
+        <script src="../js/custom.js"></script>
 
     </body>
 </html>

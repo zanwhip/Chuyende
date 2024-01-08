@@ -10,10 +10,11 @@
         <title>Kind Heart Charity - Free Bootstrap 5.2.2 CSS Template</title>
 
         <!-- CSS FILES -->        
-        <link href="../css//bootstrap-icons.css" rel="stylesheet">
-        <link href="../css//bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-icons.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-        <link href="../css//templatemo-kind-heart-charity.css" rel="stylesheet">
+        <link href="../css/templatemo-kind-heart-charity.css" rel="stylesheet">
+        <link href="../css/styles.css" rel="stylesheet">
 
 
     </head>
@@ -23,12 +24,7 @@
         <header class="site-header">
             <div class="container">
               <div class="row">
-                <div class="col-lg-6 col-12 d-flex flex-wrap">
-                  <!-- <p class="d-flex me-4 mb-0">
-                    <i class="bi-geo-alt me-2"></i>
-                    470 Tran Dai Nghia, Da Nang, Viet Nam
-                  </p> -->
-                </div>
+                <div class="col-lg-6 col-12 d-flex flex-wrap"></div>
       
                 <div class="col-lg-6 col-12 ms-auto d-lg-block d-none">
                   <ul class="social-icon">
@@ -47,39 +43,53 @@
                       </a>
                     </li>
                     <li class="social-icon-item">
-                      <div class="custom-select">
-                                          
-<select id="language-select" class="language-select" onchange="changeLanguage()">
-    <option value="en" >English</option>
-    <option value="vi" selected>Vietnamese</option>
-    <option value="fr">French</option>
-    <option value="jp">Japanese</option>
-  </select>
-  
-  <script>
-  function changeLanguage() {
-    var selectElement = document.getElementById("language-select");
-    var selectedValue = selectElement.value;
-  
-    switch (selectedValue) {
-      case "en":
-        window.location.href = "projects.html";
-        break;
-      case "vi":
-        window.location.href = "./projects_Vietnamese.html";
-        break;
-      case "fr":
-        window.location.href = "projects_France.html";
-        break;
-      case "jp":
-        window.location.href = "projects_Japanese.html";
-        break;
-      default:
-        // Default case, you can handle it accordingly
-        break;
-    }
-  }
-  </script>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-default dropdown-toggle"
+                          style="color: white"
+                          type="button"
+                          id="dropdownMenu1"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="true"
+                        >
+                          <img
+                            src="../images/icons/vietnam.png"
+                            width="20"
+                            height="20"
+                          />
+                          Vietnamese
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li class="p-2">
+                            <a href="projects.html">
+                              <img
+                                src="../images/icons/english.png"
+                                width="17px"
+                                class="me-2"
+                              />English</a
+                            >
+                          </li>
+                          <li class="p-2">
+                            <a href="projects_Japanese.html">
+                              <img
+                                src="../images/icons/japanese.png"
+                                width="17px"
+                                class="me-2"
+                              />Japanese</a
+                            >
+                          </li>
+                          <li class="p-2">
+                            <a href="projects_France.html">
+                              <img
+                                src="../images/icons/france.png"
+                                width="14px"
+                                class="me-2"
+                              />French</a
+                            >
+                          </li>
+                        </ul>
                       </div>
                     </li>
                   </ul>
@@ -87,62 +97,74 @@
               </div>
             </div>
           </header>
-
-        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+      
+          <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="../images//logo.jpg" class="logo img-fluid" alt="Kind Heart Charity">
-                    <span>
-                        SMILE EYE CHARITY
-                        <small>Tổ chức quyên góp</small>
-                    </span>
-                </a>
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="../images/logo.png"
+                  class="logo img-fluid"
+                  alt="Smile Eye Charity"
+                />
+                <span>
+                  Smile Eye Charity
+                  <small>Non-profit Organization</small>
+                </span>
+              </a>
+      
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../indexVN.html" style="color: #5a6f80;">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dự án</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#section_3a">Đã hoàn thành</a></li>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#top">Trang chủ</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link click-scroll dropdown-toggle" href="" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dự án</a>
+                            <li><a class="dropdown-item" href="#section_3b">Đang tiến hành</a></li>
 
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#section_3a">Đã hoàn thành</a></li>
+                            <li><a class="dropdown-item" href="#section_3c"> Dự định</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2" >Tin tức</a>
+                    </li>
 
-                                <li><a class="dropdown-item" href="#section_3b">Đang tiến hành</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Người đóng góp</a>
+                    </li>
 
-                                <li><a class="dropdown-item" href="#section_3c"> Dự định</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Tin tức</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Q&A</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Người đóng góp</a>
-                        </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">Liên hệ</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Q&A</a>
-                        </li>
-
-                        
-                        
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_6">Liên hệ</a>
-                        </li>
-
-                        <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Quyên góp</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Quyên góp</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+            </div>
+          </nav>
 
         <main>
 
@@ -227,8 +249,18 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; align-items: center; ">
                                             <h5 class="mb-1">HỖ TRỢ THỰC PHẨM VÀ QUẦN ÁO TRƯỚC MÙA MƯA -2023</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png" style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
+                                        <!-- Modal -->
+                                        <div id="imageModal" class="modal">
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <span class="close" onclick="closeImageModal()">&times;</span>
+                                              <p>Chia sẻ đường link của trang web này <br> để mời gọi thêm nhiều người cùng tham gia:</p>
+                                                <input type="text" value="http://127.0.0.1:5501/project-detail-comlete.html" id="shareLinkInput" readonly>
+                                                <button1 onclick="copyToClipboard()">Sao chép link</button1>
+                                            </div>
+                                          </div>
                                         <p>Thời gian: tháng 7 năm 2023</p>
                                          <p>Địa điểm : Thôn Pà-căng, xã Cà-dy, huyện Nam Giang, tỉnh Quảng Nam</p>
                                          <p> 30 gia đình bản Pà-căng</p>
@@ -244,6 +276,7 @@
 
                                         
                                     </div>
+                                    
                                     <div style="display: flex; align-items: center; margin-left : 30px;" >
                                         <a href="donate.html" class="custom-btn btn" style="flex: 50%; border-Radius : 20px; ">Quyên góp</a>
                                         <div>
@@ -255,17 +288,33 @@
                                             <img src="../images//icons/detail.png" style="width: 40px; height: 5    0px; margin: 5px; flex: 15%;" alt="Detail icon"/>
                                         </div>
                                         
-                                    </div>
-                                    
+                                    </div>                                
                                     
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </section>
+                <script>
+                    function openImageModal() {
+                        document.getElementById('imageModal').style.display = 'block';
+                    }
 
+                    function closeImageModal() {
+                        document.getElementById('imageModal').style.display = 'none';
+                    }
+  
+                    function copyToClipboard() {
+                        const copyText = document.getElementById('shareLinkInput');
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+                        document.execCommand('copy');
+                        alert('Link copied to clipboard!');
+                    }
+  
+                </script>
+            </section>
+            
 
 
 <!-- Processing Projects             -->
@@ -285,7 +334,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">DỰ ÁN GIÚP NGƯỜI CƠ-TU SẢN XUẤT LƯƠNG THỰC</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -345,7 +394,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN GIÚP NGƯỜI CƠ-TU XÂY NHÀ PHÂN BÓN HỮU CƠ</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -405,7 +454,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between;  height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN GIÚP TRẺ EM CƠ-TU CÓ BỮA SÁNG DINH DƯỠNG </h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -479,7 +528,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">DỰ ÁN DẠY ÂM NHẠC DÂN TỘC CHO TRẺ EM CƠ-TU</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -524,7 +573,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN MỞ LỚP DẠY VẼ TRẺ EM LÀNG PÀ-CĂNG</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -566,7 +615,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px;">
                                             <h5 class="mb-3">DỰ ÁN DẠY TIẾNG ANH CHO TRẺ EM LÀNG PÀ-CĂNG</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -609,7 +658,7 @@
                                     <div class="custom-block-body">
                                         <div style="display: flex; justify-content: space-between; height: 110px ">
                                             <h5 class="mb-3">DỰ ÁN HỖ TRỢ CÔNG CỤ HỌC TẬP CHO TRẺ EM CƠ-TU</h5>
-                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" />
+                                            <img src="../images//icons/shareicon.png"  style="width: 40px; height: 40px; margin-bottom :20px" class="clickable-image" onclick="openImageModal()"/>
                                         </div>
                                         
 
@@ -665,101 +714,111 @@
 
         <footer class="site-footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-12 mb-4">
-                        <img src="images/logo.png" class="logo img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4">
-                        <h5 class="site-footer-title mb-3">Quick Links</h5>
-
-                        <ul class="footer-menu">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Our Story</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Newsroom</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Causes</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Become a volunteer</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Partner with us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mx-auto">
-                        <h5 class="site-footer-title mb-3">Contact Infomation</h5>
-
-                        <p class="text-white d-flex mb-2">
-                            <i class="bi-telephone me-2"></i>
-
-                            <a href="tel: 120-240-9600" class="site-footer-link">
-                                120-240-9600
-                            </a>
-                        </p>
-
-                        <p class="text-white d-flex">
-                            <i class="bi-envelope me-2"></i>
-
-                            <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                                donate@charity.org
-                            </a>
-                        </p>
-
-                        <p class="text-white d-flex mt-3">
-                            <i class="bi-geo-alt me-2"></i>
-                            Akershusstranda 20, 0150 Oslo, Norway
-                        </p>
-
-                        <a href="#" class="custom-btn btn mt-3">Get Direction</a>
-                    </div>
+              <div class="row">
+                <div
+                  class="col-lg-3 col-12 mb-4 align-items-center justify-content-center"
+                >
+                  <img src="../images/logo.png" class="logo img-fluid" alt="" />
+                  <span class="span-footer mb-3">Smile Eye Charity</span>
                 </div>
+      
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <h5 class="site-footer-title mb-3">Company Communication</h5>
+      
+                  <ul class="footer-menu row">
+                    <li class="footer-menu-item">
+                      <p class="footer-menu-link">Name:</p>
+                      <p class="footer-menu-link">SMILE EYE CHARITY CO., LTD</p>
+                    </li>
+      
+                    <li class="footer-menu-item">
+                      <p class="footer-menu-link">Tax Number:</p>
+                      <p class="footer-menu-link">4001273487</p>
+                    </li>
+      
+                    <li class="footer-menu-item">
+                      <p class="footer-menu-link">Account Number:</p>
+                      <ul>
+                        <li>
+                          <p class="footer-menu-link">
+                            Techcombank, 22296699, Smile Eye Charity
+                          </p>
+                        </li>
+                        <li>
+                          <p class="footer-menu-link">
+                            MB Bank, 020166669999, Smile Eye Charity
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+      
+                    <li class="footer-menu-item"></li>
+      
+                    <li class="footer-menu-item">
+                      <div class="d-flex">
+                        <p class="footer-menu-link">Address:</p>
+                        <p class="footer-menu-link">
+                          Thôn Pà-ong, Xã Cà Dy, Huyện Nam Giang, Tỉnh Quảng Nam, Việt
+                          Nam
+                        </p>
+                      </div>
+                    </li>
+                    <li class="footer-menu-item">
+                      <div class="d-flex">
+                        <p class="footer-menu-link">Representative:</p>
+                        <p class="footer-menu-link">Mrs. Đinh Thị Đông Phương</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                  <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+      
+                  <p class="text-white d-flex mb-2">
+                    <i class="bi-telephone me-2"></i>
+      
+                    <a href="tel: 120-240-9600" class="site-footer-link"
+                      >Hotline: 0962 414 125
+                    </a>
+                  </p>
+      
+                  <p class="text-white d-flex">
+                    <i class="bi-envelope me-2"></i>
+      
+                    <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                      Email: dinhdongphuong@gmail.com
+                    </a>
+                  </p>
+      
+                  <p class="text-white d-flex mt-3">
+                    <i class="fa-solid fa-briefcase me-2"></i>
+                    Working Time: 8h30 - 17h30, Monday - Saturday
+                  </p>
+                </div>
+              </div>
             </div>
-
+      
             <div class="site-footer-bottom">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-md-7 col-12">
-                            <p class="copyright-text mb-0">Copyright © 2036 <a href="#">Kind Heart</a> Charity Org.
-                        	Design: <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-                        </div>
-                        
-                        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
-                            <ul class="social-icon">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-facebook"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-linkedin"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-7 col-12">
+                    <p class="copyright-text mb-0">
+                      Copyright © 2024 <a href="#">Smile Eye</a> Charity Org
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
-        </footer>
+          </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/counter.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.sticky.js"></script>
+        <script src="../js/click-scroll.js"></script>
+        <script src="../js/counter.js"></script>
+        <script src="../js/custom.js"></script>
 
     </body>
 </html>

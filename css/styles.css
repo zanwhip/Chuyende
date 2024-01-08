@@ -1,0 +1,81 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .container {
+  display: flex;
+} */
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px; /* Đặt chiều rộng tối đa cho modal-content */
+  width: 100%; /* Đặt chiều rộng tối đa cho modal-content */
+  text-align: center;
+  border-radius: 10px; /* Bo tròn góc của modal-content */
+}
+
+.close {
+  color: #aaa;
+  float: right; /* Đẩy nút đóng về bên phải */
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute; /* Đặt vị trí tuyệt đối để có thể di chuyển tự do */
+  top: 10px; /* Đặt khoảng cách từ trên xuống (có thể điều chỉnh giá trị này) */
+  right: 10px; /* Đặt khoảng cách từ phải sang trái (có thể điều chỉnh giá trị này) */
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button in modal */
+button1 {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px; /* Bo tròn góc của button */
+}
+
+button1:hover {
+  background-color: #45a049;
+}
+
+/* Input field in modal */
+input {
+  width: calc(
+    100% - 3px
+  ); /* Giảm chiều rộng của input để fit với modal-content */
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước thực tế */
+  display: block; /* Hiển thị input làm block để có thể căn giữa */
+  margin-left: auto; /* Căn phải */
+  margin-right: auto; /* Căn trái */
+}
